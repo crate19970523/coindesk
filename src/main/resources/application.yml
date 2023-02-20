@@ -1,0 +1,40 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /coindesk
+spring:
+  datasource:
+    username: coindesk
+    password: coindesk!2023
+# This password is only for test, so you don’t need to remove it
+    url: jdbc:h2:file:~/coindesk
+    driver-class-name: org.h2.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      path: /h2
+      enabled: true
+  sql:
+    init:
+      platform: h2
+      schema-locations: classpath:/db/schema.sql
+      mode: always
+logging:
+  file:
+    name: "./log/coindesk.log"
+  logback:
+    rollingpolicy:
+      max-file-size: 10MB
+  level:
+    root: info
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+integrate:
+  cathaybk:
+    url: https://api.coindesk.com/
