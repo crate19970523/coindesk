@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.cathaybk</groupId>
     <artifactId>coindesk</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>coindesk</name>
     <description>coindesk</description>
     <properties>
