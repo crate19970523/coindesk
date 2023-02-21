@@ -11,6 +11,9 @@
 
 swagger 網址: http://localhost:8080/coindesk/swagger-ui/index.html
 
+## 初始化 sql 的位置:
+https://github.com/crate19970523/coindesk/blob/master/src/main/resources/db/schema.sql
+
 ## API 的 request
 可以使用vscode 或 IDEA 進行測試。
 ```http request
